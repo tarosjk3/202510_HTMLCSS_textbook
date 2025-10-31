@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+/* 全称セレクタ */
+* {
+    color:#333;
+    box-sizing: border-box;
+}
+h1 {
+    background-color: #ffe100;
+    width: 500px;
+    padding: 40px 60px 10px;
+    border: 5px dotted #ffaa00;
+}
+
+p { color: #37bd82; }
+
+em {
+    background-color: pink;
+    width: 600px;
+    padding: 50px;
+    margin: 40px;
+    display: inline-block;
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <section>
+        <h1>Web限定キャンペーン中！</h1>
+        <p>Webでお申し込みいただいた方限定で、<em>特別価格</em>を実施中です。</p>
+    </section>
+
+    <div class="media">
+        <p>メディアクエリによるスタイルの切り替え</p>
+    </div>
+
+    <div>
+        <a href="#odaiba" class="text-link" id="important-link">テキストリンク</a>
+        <a href="https://books.mdn.co.jp" target="_blank" class="button-link">ボタンリンク</a>
+        <a href="#" class="button-link2">ボタンリンク2</a>
+    </div>
+
+    <div>
+        <img src="img/odaiba.jpg" alt="お台場の夜景" width="997" height="1500" class="odaiba">
+    </div>
+
+    <div>
+        <picture>
+            <source srcset="img/odaiba.webp" media="(min-width: 900px)">
+            <source srcset="img/odaiba-resize.webp" media="(min-width: 300px)">
+            <img src="img/odaiba.jpg" alt="お台場の夜景">
+        </picture>
+    </div>
+
+    <div class="fit" id="odaiba">
+        <img src="img/odaiba.jpg" alt="お台場の画像" class="fit-img">
+    </div>
+</body>
+</html>

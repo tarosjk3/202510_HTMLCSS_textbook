@@ -1,0 +1,90 @@
+@charset 'utf-8';
+
+section {
+    background-color: #3eb6bd;
+}
+h1 {
+    color: #fff; /* #ffffff */
+}
+
+em {
+    font-weight: bold;
+}
+
+.odaiba {
+    width: 500px;
+    height: auto;
+    max-width: 100%;
+}
+
+.fit {
+    background-color: orange;
+    width: 1100px;
+    height: 500px;
+}
+
+.fit-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-fit: contain; */
+    object-position: right bottom;
+    object-position: 0% 50%;
+}
+
+
+.media {
+    background-color: purple;
+    height: 200px;
+}
+
+@media screen and (max-width: 600px) {
+    .media {
+        background-color: gold;
+    }
+}
+
+/* IDセレクタ */
+#important-link {}
+
+a {
+    display: block;
+    width: 200px;
+    margin: 40px auto;
+    padding: 1em;
+    text-align: center;
+}
+
+@media screen and (min-width: 960px) {
+    a:hover {
+        opacity: 0.7;/* 0~1の値を設定 */
+    }
+}
+
+a.text-link {
+    color: #000;
+    text-decoration: underline;
+}
+
+a.button-link {
+    background: #ffd700;
+    text-decoration: none;
+    color: #ff4500;
+    font-size: 20px;
+}
+
+a.button-link2 {
+    background: #1e90ff;
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    border-bottom: 4px solid #191970;
+}
+
+/* 押下している間のスタイル */
+a.button-link2:active {
+    border-bottom: none;
+    /* transform: translateY(4px); */
+    margin-top: 44px;
+}
