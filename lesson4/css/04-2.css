@@ -1,0 +1,85 @@
+@charset 'utf-8';
+
+.bg-001 {
+    height: 200px;
+    background: url(../img/bg-stripe.png) repeat left center;
+}
+
+.bg-002 {
+    height: 400px;
+    background: #98807b url(../img/bg-cat.png) center bottom no-repeat;
+}
+
+.box {
+    width: 200px;
+    height: 200px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    background: url(../img/bg-cat-light.png) no-repeat right bottom;
+}
+
+.px {
+    background-size: 150px 50px;
+}
+
+.per {
+    background-size: 50% 50%;
+    background-size: 50% auto;
+}
+
+.cover {
+    background-size: cover;
+}
+
+.contain {
+    background-size: contain;
+}
+
+section {
+    background: skyblue;
+    width: 200px;
+    /* height: 200px; */
+}
+
+.relative {
+    width: 200px;
+    height: auto;
+    position: relative;
+    top: 60px;
+    left: 100px;
+}
+
+.absolute {
+    width: 200px;
+    height: auto;
+    position:absolute;
+    right: 60px;
+    bottom: 100px;
+}
+
+.parent {
+    position: relative;
+}
+
+.fixed {
+    position: fixed;
+    width: 200px;
+    height: auto;
+    right: 0;
+    top: 0;
+}
+
+.sticky-parent {
+    width: 600px;
+}
+
+.sticky {
+    position: sticky;
+    width: 200px;
+    height: auto;
+    top: 40px;
+}
+
+.sticky-parent p {
+    margin-left: 220px;
+}
