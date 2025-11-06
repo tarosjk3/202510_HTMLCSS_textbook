@@ -1,7 +1,64 @@
 @charset 'utf-8';
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 .bg-hero {
-    background: url() center bottom no-repeat;
+    background: url(../img/bg-hero-sp.jpg) center bottom no-repeat;
     background-size: cover;
     height: 80vh;
+}
+
+.bg-info {
+    padding: 20% 7% 0;
+    color: #fff;
+}
+
+.bg-info h1 {
+    text-align: center;
+    margin-bottom: .75em;
+    font-size: 1.625rem;
+}
+
+.bg-info p {
+    line-height: 1.8;
+    font-size: .875rem;
+}
+
+@media screen and (min-width:600px) {
+    .bg-hero {
+        background-image: url(../img/bg-hero-pc.jpg);
+    }
+    .bg-info {
+        padding: 10% 18%;
+    }
+    .bg-info h1 {
+        font-size: 1.875rem;
+    }
+    .bg-info p {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:960px) {
+    .bg-hero {
+        position: relative;
+    }
+    .bg-info {
+        padding: 0;
+        width: 40%;
+        position: absolute;
+        top: 20%;
+        left: 120px;
+    }
+    .bg-info h1 {
+        text-align: left;
+        text-align: start;/* モダンな書き方 */
+    }
+
+    .bg-info p {
+        font-size: 1rem;
+    }
 }
