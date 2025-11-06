@@ -51,3 +51,27 @@
     font-size: 12px;
     display: block;
 }
+
+.gnav-button {
+    display: none;
+}
+
+@media screen and (max-width:800px) {
+    .gnav-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .gnav-list {
+        position: fixed;
+        padding-top: 10vh;
+        top: 0;
+        left: -100%;
+        z-index: 100;
+        width: 100%;
+        max-width: 240px;
+        height: 100vh;
+        flex-direction: column;
+        transition: 0.3s;
+    }
+}
