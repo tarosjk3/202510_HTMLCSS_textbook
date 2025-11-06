@@ -1,0 +1,7 @@
+@charset 'utf-8';
+
+.bg-hero {
+    background: url() center bottom no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
