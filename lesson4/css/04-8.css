@@ -27,3 +27,22 @@ span {
 .vertical span {
     vertical-align: middle;
 }
+
+.flex p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.position {
+    height: 300px;
+    position: relative;
+    background: skyblue;
+}
+.position p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    translate: -50% -50%;
+}
