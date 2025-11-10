@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>04-10</title>
+    <link rel="stylesheet" href="css/04-10.css">
+</head>
+<body>
+    <ul class="container">
+        <!-- li.item*6>img[src=img/$.png] -->
+        <!-- li.item*6>img[src=img/$@4.png] 👈4〜の連番になる-->
+        <li class="item"><img src="img/1.png" alt=""></li>
+        <li class="item"><img src="img/2.png" alt=""></li>
+        <li class="item"><img src="img/3.png" alt=""></li>
+        <li class="item"><img src="img/4.png" alt=""></li>
+        <li class="item"><img src="img/5.png" alt=""></li>
+        <li class="item"><img src="img/6.png" alt=""></li>
+    </ul>
+
+    <div class="placement">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+    </div>
+
+    <div class="auto-layout">
+        <!-- .child*6{$} -->
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+
+    <div class="layout">
+        <img src="https://picsum.photos/id/0/800/600" alt="">
+        <div class="text">
+            Web Design Practice
+        </div>
+    </div>
+</body>
+</html>
