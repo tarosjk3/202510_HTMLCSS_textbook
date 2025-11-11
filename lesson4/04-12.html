@@ -28,7 +28,13 @@
         <textarea name="message" id="content"></textarea>
     </div>
     <div>
-        チェックボックス
+        <form action="" method="post">
+            <!-- label*3>input:checkbox[name=food] -->
+            <label><input type="checkbox" name="food[]" value="バナナ">バナナ</label>
+            <label><input type="checkbox" name="food[]" value="ブドウ">ブドウ</label>
+            <label><input type="checkbox" name="food[]" value="モモ">モモ</label>
+            <input type="submit" value="送信">
+        </form>
     </div>
 </body>
 </html>
