@@ -1,0 +1,42 @@
+@charset 'utf-8';
+
+div {
+    width: 100px;
+    height: 100px;
+    padding: 1em;
+    margin: 2em 2em 4em;
+    background: #ad4444;
+    color: #fff;
+    font-size: 14px;
+}
+
+.width {
+    transition: width 0.5s ease-out 0s;
+    transition-property: width, height;/* アニメーション対象のプロパティ all(省略可) */
+    transition-duration: 0.5s, 2s;/* アニメーション時間 必須 */
+    transition-timing-function: cubic-bezier(.87,-0.39,.18,1.31);/* イージング ease(省略可) */
+    transition-delay: 0s;/* 遅延時間 0s(省略可) */
+}
+.width:hover {
+    width: 400px;
+    height: 200px;
+}
+
+.circle {
+    transition: border-radius .2s;
+}
+.circle:hover {
+    border-radius: 50%;
+}
+
+.scale {
+    transition: transform .5s ease-in-out 1s;/* 帰りのアニメーション */
+}
+.scale:hover {
+    /* 倍率で指定する
+        数値が1つの場合は幅と高さに対して
+        数値が2つの場合は幅と高さそれぞれ scale(1.5, 2)
+    */
+    transform: scale(1.5);
+    transition: transform .5s;/* 行きのアニメーション */
+}
