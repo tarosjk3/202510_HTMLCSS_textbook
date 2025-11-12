@@ -40,3 +40,142 @@ div {
     transform: scale(1.5);
     transition: transform .5s;/* 行きのアニメーション */
 }
+
+.sample1 {
+    animation: zigzag 2s ease 0s 3 normal;
+    animation-name: zigzag;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+
+    /* 再生方向 - normal / reverse(逆再生) / alternate(再生・逆再生) / alternate-reverse(逆再生・再生) */
+    animation-direction: normal;
+
+    /* 
+    アニメーションの開始と終了のスタイルを保持するかどうか 
+    none / forwards(終了) / backwards(開始) / both(両方)
+    */
+    animation-fill-mode: both;
+
+    /* アニメーションの再生状態 - running / paused */
+    animation-play-state: running;
+}
+@keyframes zigzag {
+    0%{ 
+        transform: translate(0,0);
+        background: pink;
+    }
+    50% {
+        transform: translate(50px, 50px);
+    }
+    100% {
+        transform: translate(100px, 0);
+        background: yellow;
+    }
+}
+
+
+.sample2 {
+    animation: scale-and-color 4s linear 0s infinite alternate;
+}
+@keyframes scale-and-color {
+    0% {
+        background: #ad4444;
+        transform: scale(1);
+    }
+    50% {
+        background: #3946ad;
+        transform: scale(1.5);
+    }
+    100% {
+        background: #4dad48;
+        transform: scale(1);
+    }
+}
+
+img {
+    width: 100px;
+    margin-right: 2em;
+}
+
+.sample3 {
+    animation: loading 1s linear 0s infinite;
+}
+@keyframes loading {
+    0% {
+        transform: rotate(0deg);
+    }
+    30% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sample4 {
+    animation: heart .8s ease 0s infinite normal;
+}
+@keyframes heart {
+    0%, 8%, 100% {
+        transform: scale(1);
+    }
+    15% {
+        transform: scale(1.1);
+    }
+}
+
+.slideshow {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    padding: 0;
+    margin: 0 auto 40px;
+    position: relative;
+    aspect-ratio: 4 / 3;
+}
+
+.slideshow img {
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    opacity: 0;
+}
+
+
+/* 17sアニメーションの場合 */
+@keyframes fade-slideshow {
+    0% {
+        opacity: 0;
+    }
+    /* 
+    １秒は6%ととして扱う
+    1 / 17 = 5.88... ≒ 6% 
+    */
+    6% {
+        opacity: 1;
+    }
+    24% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.slideshow img {
+    animation: fade-slideshow 16s infinite;
+}
+.slideshow img:nth-of-type(2) {
+    animation-delay: 4s;
+}
+.slideshow img:nth-of-type(3) {
+    animation-delay: 8s;
+}
+.slideshow img:nth-of-type(4) {
+    animation-delay: 12s;
+}
