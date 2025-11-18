@@ -1,0 +1,142 @@
+@charset 'utf-8';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ Pro', Meiryo, 'メイリオ', sans-serif;
+    font-size: 16px;
+    font-weight: 400;/* normal */
+    line-height: 1.5;
+    color: #fff;
+}
+
+img {
+    display: block;
+}
+
+/* ヘッダー・メインビジュアル */
+header img {
+    width: 200px;
+    margin: 0 auto;
+}
+
+.main-visual img {
+    width: 100%;
+}
+
+/* セクション共通 */
+section {
+    width: 100%;
+    padding: 40px 0 60px;
+}
+
+/* 各セクション */
+section:nth-of-type(1) {
+    background-color: #a68072;
+}
+section:nth-of-type(2) {
+    background-color: #6889a6;
+}
+section:nth-of-type(3) {
+    background-color: #010d26;
+}
+section:nth-of-type(4) {
+    background-color: #624a3b;
+}
+
+.inner {
+    width: 70%;
+    margin: 0 auto;
+}
+
+h2 {
+    margin-bottom: 30px;
+    border-bottom: 4px solid #fff;
+}
+
+/* 番号付きリスト */
+ol li {
+    margin-bottom: 10px;
+}
+
+/* テーブル */
+table {
+    width: 80%;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+    background: #fff;
+}
+th,td {
+    padding: 1em;
+    border: 1px solid #3d5a6d;
+}
+th {
+    background-color: #687c9f;
+}
+td {
+    color: #222;
+}
+
+/* フォーム */
+form {
+    width: 80%;
+    margin: 0 auto;
+}
+form dt {
+    margin-bottom: 20px;
+}
+form dt::before {
+    content: '◆';
+    margin-right: 10px;
+}
+
+form dd {
+    margin-bottom: 40px;
+    margin-left: 0;
+}
+
+input {
+    width: 100%;
+    padding: .5em;
+    font-size: 1.1em;
+    border: none;
+}
+
+input[type="radio"] {
+    width: 1em;
+    margin-right: 4px;
+    margin-left: 24px;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 70%;
+    padding: 20px;
+    margin: 40px auto 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff8124;
+}
+
+/* プロモーション */
+.promotion img {
+    width: 100%;
+}
+
+/* フッター */
+footer {
+    padding: 30px;
+    font-size: 0.9em;
+    text-align: center;
+    color: #666;
+}
+
+address {
+    margin-bottom: 10px;
+}

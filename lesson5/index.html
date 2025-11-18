@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>秋季限定！北海道3日間ツアー - MdN Tours</title>
     <meta name="description" content="北海道の美しい景色と豊かな食文化を体験する3日間のツアー。特別なガイドとともに観光名所を巡り、地元の美味しい食事を楽しむことができます。">
+    <link rel="stylesheet" href="css/normalize.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -42,59 +45,87 @@
 
         <section>
             <div class="inner">
-                ツアー日程
-                1日目：到着とウェルカムディナー
-                新千歳空港到着
-                ホテルチェックイン
-                ウェルカムディナー（北海道産の食材を使用した特別メニュー）
-                2日目：富良野と美瑛
-                富良野ラベンダー畑（季節限定）
-                美瑛の青い池
-                ファーム富田での花畑散策
-                3日目：旭山動物園と帰路
-                旭山動物園見学
-                お土産タイム
-                新千歳空港へ移動、出発
+                <h2>ツアー日程</h2>
+                <h3>1日目：到着とウェルカムディナー</h3>
+                <ol>
+                    <li>新千歳空港到着</li>
+                    <li>ホテルチェックイン</li>
+                    <li>ウェルカムディナー（北海道産の食材を使用した特別メニュー）</li>
+                </ol>
+                <h3>2日目：富良野と美瑛</h3>
+                <ol>
+                    <li>富良野ラベンダー畑（季節限定）</li>
+                    <li>美瑛の青い池</li>
+                    <li>ファーム富田での花畑散策</li>
+                </ol>
+                <h3>3日目：旭山動物園と帰路</h3>
+                <ol>
+                    <li>旭山動物園見学</li>
+                    <li>お土産タイム</li>
+                    <li>新千歳空港へ移動、出発</li>
+                </ol>
             </div>
         </section>
         
         
         <section>
             <div class="inner">
-                料金と注意事項
-                ツアー料金：XX,XXX円（税込）
-                料金に含まれるもの
-                往復航空券、宿泊費、食事（朝食4回、昼食3回、夕食4回）、観光地入場料、ガイド料
-                料金に含まれないもの
-                個人的な支出、旅行保険
+                <h2>料金と注意事項</h2>
+                <p>ツアー料金：XX,XXX円（税込）</p>
+                <table>
+                    <tr>
+                        <th>料金に含まれるもの</th>
+                        <td>往復航空券、宿泊費、食事（朝食4回、昼食3回、夕食4回）、観光地入場料、ガイド料</td>
+                    </tr>
+                    <tr>
+                        <th>料金に含まれないもの</th>
+                        <td>個人的な支出、旅行保険</td>
+                    </tr>
+                </table>
             </div>
         </section>
         
         
         <section>
             <div class="inner">
-                お申し込み方法
-                下記のフォームに必要事項を入力し、「申し込む」ボタンをクリックしてください。お申し込み後、担当者より確認のご連絡を差し上げます。
-                氏名
-                メールアドレス
-                アレルギーはありますか
-                はい
-                いいえ
-                申し込む
+                <h2>お申し込み方法</h2>
+                <p>下記のフォームに必要事項を入力し、「申し込む」ボタンをクリックしてください。お申し込み後、担当者より確認のご連絡を差し上げます。</p>
+                <form action="">
+                    <dl>
+                        <dt><label for="user-name">氏名</label></dt>
+                        <dd>
+                            <input type="text" name="user-name" id="user-name">
+                        </dd>
+                        <dt><label for="user-email">メールアドレス</label></dt>
+                        <dd>
+                            <input type="email" name="user-email" id="user-email">
+                        </dd>
+                        <dt>アレルギーはありますか</dt>
+                        <dd>
+                            <input type="radio" name="allergy" id="allergy-yes" value="はい">
+                            <label for="allergy-yes">はい</label>
+                            <input type="radio" name="allergy" id="allergy-no" value="いいえ">
+                            <label for="allergy-no">いいえ</label>
+                        </dd>
+                    </dl>
+                    <button type="submit">申し込む</button>
+                </form>
             </div>
         </section>
 
         <div class="promotion">
-
+            <img src="img/photo_02.jpg" alt="写真：花と動物">
         </div>
     </main>
 
     <footer>
-        〒101-0051
-        東京都千代田区神田神保町1丁目105
-        00-0000-0000
-        株式会社MdN Tours
-        © MdN Corporation.
+        <address>
+            〒101-0051<br>
+            東京都千代田区神田神保町1丁目105<br>
+            00-0000-0000<br>
+            株式会社MdN Tours
+        </address>
+        <small>&copy; MdN Corporation.</small>
     </footer>
 </body>
 
