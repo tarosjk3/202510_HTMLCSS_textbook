@@ -1,0 +1,143 @@
+@charset 'utf-8';
+
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.8;
+    font-family: "Open Sans", "Noto Sans JP", sans-serif;
+    font-weight: 400;
+    color: #333;
+    background-color: #fff;
+}
+
+h1,
+h2,
+h3 {
+    margin-top: 0;
+    line-height: 1.5;
+    letter-spacing: .2em;
+    text-align: center;
+}
+
+h3 {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.5em;
+    text-align: justify;
+}
+
+address {
+    font-style: normal;
+}
+
+a {
+    color: #efefef;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus {
+    color: #fff;
+    text-decoration: underline;
+}
+
+ul {
+    margin: 1em 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 100px 0;
+}
+
+.h2-title {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.h2-title::before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: #a5d1ff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    /* 前から順に変形が適用される */
+    z-index: -1;
+    /* margin-left: -20px; */
+}
+
+.txt-center {
+    text-align: center !important;
+}
+
+.txt-lead {
+    font-weight: 700;
+}
+
+/* ボタン */
+.btn {
+    display: block;
+    padding: 20px 35px;
+    border-radius: 8px;
+    margin: 0 auto;
+    border: none;
+}
+
+.btn:hover,
+.btn:focus {
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    /* 指のカーソル */
+}
+
+.btn-reserve {
+    color: #fff;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+/* レイアウト */
+.inner {
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width:768px) {
+    .inner {
+        max-width: 1200px;
+    }
+}
+
+/* モバイルとPCの表示に関するスタイル */
+.sp-only {
+    display: block;
+}
+.pc-only {
+    display: none;
+}
+
+@media screen and (min-width:768px) {
+    .sp-only {
+        display: none;
+    }
+    .pc-only {
+        display: block;
+    }
+}
